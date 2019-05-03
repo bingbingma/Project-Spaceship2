@@ -1,0 +1,32 @@
+{
+  "name": "project-spaceship",
+  "version": "2.0.0",
+  "description": "trying socket io again",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "db:setup": "npx sequelize db:create && npx sequelize db:migrate"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sporego/Project-Spaceship.git"
+  },
+  "author": "Caitlyn, David, Jay, Filbert",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sporego/Project-Spaceship/issues"
+  },
+  "homepage": "https://github.com/Sporego/Project-Spaceship#readme",
+  "dependencies": {
+    "dotenv": "^7.0.0",
+    "express": "^4.16.4",
+    "express-handlebars": "^3.0.2",
+    "mysql": "^2.17.1",
+    "mysql2": "^1.6.5",
+    "path": "^0.12.7",
+    "sequelize": "^5.7.6",
+    "sequelize-cli": "^5.4.0",
+    "socket.io": "^2.2.0"
+  }
+}
