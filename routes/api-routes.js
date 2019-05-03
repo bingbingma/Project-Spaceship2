@@ -15,19 +15,6 @@ module.exports = function(app) {
       res.json(results);
       // res.render("index");
     });
-    // Add a new message
-    app.post("/api/new", function(req, res) {
-      console.log("Message Data:");
-      console.log(req.body);
-
-      dB.Message.create({
-        username: req.body.username,
-        message: req.body.message
-      }).then(function(results) {
-        // `results` here would be the newly created message
-        res.status(200).end();
-      });
-    });
   });
 };
 // Get all messages

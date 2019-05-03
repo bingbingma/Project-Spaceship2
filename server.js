@@ -50,7 +50,8 @@ io.on("connection", socket => {
     });
     var newMessage = {
       username: socket.username,
-      message: data
+      message: data,
+      category: "hello"
     };
     console.log(newMessage);
 
@@ -59,7 +60,6 @@ io.on("connection", socket => {
     // var message = new dB.Message();
     //import object on constructor function
     dB.Message.create(newMessage);
-    console.log(dB);
   });
 
   //newmessage is an object,
